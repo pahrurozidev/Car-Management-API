@@ -291,12 +291,10 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJBZG1pbiIsImVtYWl
 ```
 
 ## How To Use:
-npm install           : Install all packages
-npm run db:create     : Used to create database
-npm run db:migrate    : Used to run database
-npm run db:seed       : Used to run seeders
-npm run start         : Used to run this app
-
-<br/>
+npm install           : Install all packages<br/>
+npm run db:create     : Used to create database<br/>
+npm run db:migrate    : Used to run database<br/>
+npm run db:seed       : Used to run seeders<br/>
+npm run start         : Used to run this app<br/>
 
 <p align="center">Created by @pahrurozi</p>
