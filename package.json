@@ -1,7 +1,7 @@
 {
   "name": "challenge-6",
   "version": "1.0.0",
-  "description": "Submission 6 - Pahrurozi",
+  "description": "Challenge 6 - Binar Academy",
   "main": "index.js",
   "scripts": {
     "start": "nodemon -q bin/www",
@@ -10,7 +10,7 @@
     "db:seed": "npx sequelize db:seed:all"
   },
   "keywords": [],
-  "author": "Pahrurozi [pahrurozi17@gmail.com]",
+  "author": "Pahrurozi",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",

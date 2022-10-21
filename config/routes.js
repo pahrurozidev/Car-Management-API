@@ -26,10 +26,10 @@ router.post('/api/v1/admin', authorize, register);
 // Cars
 // =============
 
-router.get('/api/v1/cars', carList);
-router.get('/api/v1/cars/:id', show)
-router.post('/api/v1/cars', create)
-router.put('/api/v1/cars/:id', update)
-router.delete('/api/v1/cars/:id', destroy)
+router.get('/api/v1/cars', authorize, carList);
+router.get('/api/v1/cars/:id', authorize, show)
+router.post('/api/v1/cars', authorize, create)
+router.put('/api/v1/cars/:id', authorize, update)
+router.delete('/api/v1/cars/:id', authorize, destroy)
 
 module.exports = { router };

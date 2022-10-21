@@ -24,6 +24,15 @@ module.exports = {
       type: {
         type: Sequelize.STRING
       },
+      userCreate: {
+        type: Sequelize.STRING
+      },
+      userUpdate: {
+        type: Sequelize.STRING
+      },
+      userDelete: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

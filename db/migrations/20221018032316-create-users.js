@@ -24,6 +24,15 @@ module.exports = {
       refresh_token: {
         type: Sequelize.TEXT
       },
+      userCreate: {
+        type: Sequelize.STRING
+      },
+      userUpdate: {
+        type: Sequelize.STRING
+      },
+      userDelete: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

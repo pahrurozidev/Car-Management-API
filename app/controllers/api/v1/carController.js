@@ -74,7 +74,7 @@ module.exports = {
         carService
             .delete(req.params.id)
             .then(() => {
-                return res.status(200).json({ // 400 is temporary code for show message on client server. The original is 204 code 
+                return res.status(200).json({
                     status: 'OK',
                     message: 'Car Successfully Deleted'
                 });
