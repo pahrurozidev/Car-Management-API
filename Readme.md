@@ -13,7 +13,7 @@
 [GET] http://localhost:5000/api/v1/cars
 ```
 
-#### Response body
+#### Sample Response body
 ```json
 {
   "status": "OK",
@@ -44,7 +44,7 @@
 [GET] http://localhost:5000/api/v1/cars/1
 ```
 
-#### Response body
+#### Sample Response body
 ```json
 {
   "status": "OK",
@@ -67,7 +67,7 @@
 [POST] http://localhost:5000/api/v1/cars
 ```
 
-#### Request body
+#### Sample Request body
 ```json
 {
   "name": String,
@@ -78,7 +78,7 @@
 }
 ```
 
-#### Response body
+#### Sample Response body
 ```json
 {
   "status": "OK",
@@ -101,7 +101,7 @@
 [PUT] http://localhost:5000/api/v1/cars/1
 ```
 
-#### Request body
+#### Sample Request body
 ```json
 {
   "name": String,
@@ -112,7 +112,7 @@
 }
 ```
 
-#### Response body
+#### Sample Response body
 ```json
 {
   "status": "OK",
@@ -126,7 +126,7 @@
 [DELETE] http://localhost:5000/api/v1/cars/1
 ```
 
-#### Response body
+#### Sample Response body
 ```json
 {
   "status": "OK",
@@ -136,9 +136,9 @@
 
 # Users Enpoints
 
-## Super Admin Credentials:
-### email: superadmin@gmail.com
-### password: super_admin
+### Super Admin Credentials:
+email: superadmin@gmail.com
+password: super_admin
 
 ## Register Users
 ```[ENDPOINT] /api/v1/register```
@@ -146,7 +146,7 @@
 [POST] http://localhost:5000/api/v1/register
 ```
 
-#### Request body
+#### Sample Request body
 ```json
 {
   "username": String,
@@ -156,7 +156,7 @@
 }
 ```
 
-#### Response body
+#### Sample Response body
 ```json
 {
   "status": "OK",
@@ -180,7 +180,7 @@
 [POST] http://localhost:5000/api/v1/login
 ```
 
-#### Request body
+#### Sample Request body
 ```json
 {
   "email": string,
@@ -188,7 +188,7 @@
 }
 ```
 
-#### Response body
+#### Sample Response body
 ```json
 {
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsInVzZXJuYW1lIjoiUGFocnVyb3ppIiwiZW1haWwiOiJwYWhydXJvemkxN0BnbWFpbC5jb20iLCJpYXQiOjE2NjYzMTI2MTAsImV4cCI6MTY2NjMxMjkxMH0.4hDh2A_kDls3RoisK9ZOfM7fhTznvUKrzYkxPG2ZecU"
@@ -201,7 +201,7 @@
 [GET] http://localhost:5000/api/v1/users
 ```
 
-#### Response body
+#### Sample Response body
 ```json
 {
   "status": "OK",
@@ -232,12 +232,12 @@
 [GET] http://localhost:5000/api/v1/user
 ```
 
-#### Request headers authorization
+#### Sample Request headers authorization
 ```text
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiaW5pYWRtaW4yQGdtYWlsLmNvbSIsImlhdCI6MTY2NjMxNDExMiwiZXhwIjoxNjY2MzE0NDEyfQ._-94LOVbHK-mmLgrtr-FTtSFLX3YfSsrRd8a9GzmUmo
 ```
 
-#### Response body
+#### Sample Response body
 ```json
 {
   "id": 6,
@@ -257,7 +257,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJBZG1pbiIsImVtYWl
 [POST] http://localhost:5000/api/v1/admin
 ```
 
-#### Request body
+#### Sample Request body
 ```json
 {
   "username": string,
@@ -267,12 +267,12 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJBZG1pbiIsImVtYWl
 }
 ```
 
-#### Request headers authorization
+#### Sample Request headers authorization
 ```text
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJBZG1pbiIsImVtYWlsIjoiaW5pYWRtaW4yQGdtYWlsLmNvbSIsImlhdCI6MTY2NjMxNDExMiwiZXhwIjoxNjY2MzE0NDEyfQ._-94LOVbHK-mmLgrtr-FTtSFLX3YfSsrRd8a9GzmUmo
 ```
 
-#### Response body
+#### Sample Response body
 ```json
 {
   "status": "OK",
@@ -291,14 +291,12 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJBZG1pbiIsImVtYWl
 ```
 
 ## How To Use:
-### npm install           : Install all packages
-### npm run db:create     : Used to create database
-### npm run db:migrate    : Used to run database
-### npm run db:seed       : Used to run seeders
-### npm run start         : Used to run this app
+npm install           : Install all packages
+npm run db:create     : Used to create database
+npm run db:migrate    : Used to run database
+npm run db:seed       : Used to run seeders
+npm run start         : Used to run this app
 
 <br/>
 
-#### Created by @pahrurozi
-Lombok - Indonesia
-
+<p align="center">Created by @pahrurozi</p>
