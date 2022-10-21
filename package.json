@@ -1,0 +1,27 @@
+{
+  "name": "challenge-6",
+  "version": "1.0.0",
+  "description": "Submission 6 - Pahrurozi",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -q bin/www",
+    "db:create": "npx sequelize db:create",
+    "db:migrate": "npx sequelize db:migrate",
+    "db:seed": "npx sequelize db:seed:all"
+  },
+  "keywords": [],
+  "author": "Pahrurozi [pahrurozi17@gmail.com]",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.8.0",
+    "sequelize": "^6.25.2",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.5.0"
+  }
+}

@@ -1,0 +1,268 @@
+openapi: 3.0.0
+info:
+  title: Car Management API
+  description: Challenge 6 - Binar Academy
+  contact:
+    email: pahrurozi17@gmail.com
+  version: '1.0'
+servers:
+  - url: http://localhost:5000/api/v1
+    variables: {}
+paths:
+  /cars:
+    get:
+      tags:
+        - Cars
+      summary: Get Cars
+      operationId: GetCars
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          headers: {}
+        '500':
+          description: Server error
+          headers: {}
+      deprecated: false
+    post:
+      tags:
+        - Cars
+      summary: Add Cars
+      operationId: AddCars
+      parameters: []
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            encoding: {}
+            schema:
+              required:
+                - name
+                - image
+                - price
+                - size
+                - type
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: Avanza
+                image:
+                  type: string
+                  example: avanza.jpg
+                price: 
+                  type: integer
+                  example: 500000
+                size:
+                  type: string
+                  example: small
+                type:
+                  type: string
+                  example: Off Roader
+        required: false
+      responses:
+        '200':
+          description: Success
+          headers: {}
+        '500':
+          description: Server error
+          headers: {}
+      deprecated: false
+  /cars/{id}:
+    get:
+      tags:
+        - Cars
+      summary: Get Cars By Id
+      OperationId: GetCarsById
+      parameters:
+        - name: id
+          in: path
+          require: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Success
+          headers: {}
+        '500':
+          description: Server error
+          headers: {}
+      deprecated: false
+  /cars/{id_cars}:
+    put:
+      tags:
+        - Cars
+      summary: Update Cars
+      operationId: UpdateCars
+      parameters:
+        - name: id_cars
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            encoding: {}
+            schema:
+              required:
+                - name
+                - image
+                - price
+                - size
+                - type
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: Update title
+                image:
+                  type: string
+                  example: update-avanza.jpg
+                price: 
+                  type: integer
+                  format: int32
+                  example: 100000
+                size:
+                  type: string
+                  example: medium
+                type:
+                  type: string
+                  example: Convertible
+        required: false
+      responses:
+        '200':
+          description: Success
+          headers: {}
+        '500':
+          description: Server error
+          headers: {}
+      deprecated: false
+    delete:
+      tags:
+        - Cars
+      summary: Delete Car
+      operationId: DeleteCar
+      parameters:
+        - name: id_cars
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Success
+          headers: {}
+        '500':
+          description: Server error
+          headers: {}
+      deprecated: false
+  /register:
+    post:
+      tags:
+        - Users
+      summary: Register Users
+      operationId: RegisterUsers
+      parameters: []
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            encoding: {}
+            schema:
+              required:
+                - username
+                - email
+                - password
+                - confPassword
+              type: object
+              properties:
+                username:
+                  type: string
+                  example: Pahrurozi
+                email:
+                  type: string
+                  example: pahrurozi17@gmail.com
+                password:
+                  type: string
+                  example: 12345
+                confPassword:
+                  type: string
+                  example: 12345
+        required: false
+      responses:
+        '200':
+          description: Success
+          headers: {}
+        '500':
+          description: Server error
+          headers: {}
+      deprecated: false
+  /login:
+    post:
+      tags:
+        - Users
+      summary: Login Users
+      operationId: LoginUsers
+      parameters: []
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            encoding: {}
+            schema:
+              required:
+                - email
+                - password
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: pahrurozi17@gmail.com
+                password:
+                  type: string
+                  example: 12345
+        required: false
+      responses:
+        '200':
+          description: Success
+          headers: {}
+        '500':
+          description: Server error
+          headers: {}
+      deprecated: false
+  /users:
+    get:
+      tags:
+        - Users
+      summary: Get Users
+      operationId: GetUsers
+      parameters: []
+      responses:
+        '200':
+          description: Success
+          headers: {}
+        '500':
+          description: Server error
+          headers: {}
+      deprecated: false
+tags:
+  - name: Misc
+    description: ''
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
