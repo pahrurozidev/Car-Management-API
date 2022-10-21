@@ -5,6 +5,12 @@
   <img width="460" height="300" src="">
 </p> -->
 
+### Access Endpoint Swagger: 
+```[ENDPOINT] /api/v1/api-docs```
+```url
+[GET] http://localhost:5000/api/v1/api-docs
+```
+
 # Cars Enpoints
 
 ## Get All Cars
@@ -296,5 +302,7 @@ npm run db:create     : Used to create database<br/>
 npm run db:migrate    : Used to run database<br/>
 npm run db:seed       : Used to run seeders<br/>
 npm run start         : Used to run this app<br/>
+
+<br/><br/>
 
 <p align="center">Created by @pahrurozi</p>
